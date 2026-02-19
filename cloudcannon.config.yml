@@ -32,6 +32,3 @@ markdown:
     superscript: false
     heading_ids: false
     attributes: false
-_enabled_editors:
-  - visual
-  - source
