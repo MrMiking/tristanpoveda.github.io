@@ -5,7 +5,7 @@ collections_config:
   pages:
     path: ''
     output: true
-    url: /[path].html
+    url: /[path]
     parser: html
     icon: wysiwyg
     disable_url: false
