@@ -3,53 +3,64 @@ projets:
   - title: "Nebulas and Volumetrics"
     subtitle: "Homeworld 3"
     image: "img/portfolio/HW3/hw3nebulas.png"
-    modalName: "Nebulas"
-    folder: "HW3"
+    portfolio_id: "Nebulas"
+    subfolder: "HW3"
   - title: "Destruction Systems"
     subtitle: "Homeworld 3"
     image: "img/portfolio/HW3/hw3destruction.png"
-    modalName: "Destruction"
-    folder: "HW3"
+    portfolio_id: "Destruction"
+    subfolder: "HW3"
+  - title: "Sensors Manager"
+    subtitle: "Homeworld 3"
+    image: "img/portfolio/HW3/hw3sensors.png"
+    portfolio_id: "SensorsManager"
+    subfolder: "HW3"
+  - title: "Superstructures"
+    subtitle: "Homeworld 3"
+    image: "img/portfolio/HW3/hw3superstructures.png"
+    portfolio_id: "Superstructures"
+    subfolder: "HW3"
 ---
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Tristan Poveda - Portfolio Page</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Tristan Poveda - Portfolio Page" />
-    <meta name="description" content="Junior Technical Artist / Tools Programmer / Game Developer" />
+    <meta name="title" content="Tristan Poveda - Portfolio Page">
+    <meta name="description" content="Junior Technical Artist / Tools Programmer / Game Developer">
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://franciscomurias.github.io/" />
-    <meta property="og:title" content="Tristan Poveda - Portfolio Page" />
-    <meta property="og:description" content="Junior Technical Artist / Tools Programmer / Game Developer" />
-    <meta property="og:image" content="https://franciscomurias.github.io/img/meta.png" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://franciscomurias.github.io/">
+    <meta property="og:title" content="Tristan Poveda - Portfolio Page">
+    <meta property="og:description" content="Junior Technical Artist / Tools Programmer / Game Developer">
+    <meta property="og:image" content="https://franciscomurias.github.io/img/meta.png">
 
     <!-- Favicons -->
-    <link href="img/favicon.png" rel="icon" />
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 
     <!-- Bootstrap CSS File -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Libraries CSS Files -->
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/venobox/venobox.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/venobox/venobox.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
 
     <!-- Main Stylesheet File -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 
@@ -102,38 +113,39 @@ projets:
             <div class="container wow fadeInUp">
                 <div class="section-header text-center">
                     <h2>PORTFOLIO</h2>
-                    <button type="button" class="btn active portfolio-filter" data-filter=".portfolio-featured">All
-                    </button><button type="button" class="btn portfolio-filter" data-filter=".portfolio-personal">Personal
-                    </button><button type="button" class="btn portfolio-filter" data-filter=".portfolio-professional">Professional
-                </button></div>
+                    <button type="button" class="btn active portfolio-filter" data-filter=".portfolio-featured">All</a>
+                    <button type="button" class="btn portfolio-filter" data-filter=".portfolio-personal">Personal</a>
+                    <button type="button" class="btn portfolio-filter" data-filter=".portfolio-professional">Professional</a>
+                </div>
                     <div class="grid" style="margin-bottom: 36px;" data-cms-bind="projets">
-    
     <div class="grid-item portfolio-item portfolio-professional portfolio-featured">
         <a class="portfolio-element btn-block" 
            data-type="portfolio" 
-           data-prop-data-portfolio="modal_id"
+           data-prop-data-portfolio="portfolio_id" 
+           data-prop-data-subfolder="subfolder"
            data-toggle="modal" 
            data-target="#portfolioModal">
-            
+           
             <img data-prop-src="image" 
                  data-prop-alt="title" 
                  src="img/portfolio/placeholder.png" 
-                 class="img-fluid portfolio-thumb" />
-            
+                 class="img-fluid portfolio-thumb">
+                 
             <div class="details">
-                <h3 data-prop="title">Nom du projet</h3>
+                <h3 data-prop="title">Titre du projet</h3>
                 <p data-prop="subtitle">Sous-titre</p>
             </div>
         </a>
     </div>
-
 </div>
                 </div>
                 <div class=" text-center" style="margin-bottom: 70px;">
-                    <button type="button" class="btn portfolio-filter more-button" data-filter=".portfolio-featured, .portfolio-personal, .portfolio-professional, .portfolio-tools">
+                    <button type="button" class="btn portfolio-filter more-button"
+                        data-filter=".portfolio-featured, .portfolio-personal, .portfolio-professional, .portfolio-tools">
                         <i class="fas fa-chevron-down"></i>
                     </button>
                 </div>
+
             </section>
 
             <!--==========================
@@ -161,8 +173,8 @@ projets:
                                 </div>
                             <div class="gamejam-details">
                                 <div class="gamejam-side-images">
-                                    <img class="gamejam-side-image" src="" alt=" " />
-                                    <img class="gamejam-side-image" src="" alt="  " />
+                                    <img class="gamejam-side-image" src="" alt=" ">
+                                    <img class="gamejam-side-image" src="" alt="  ">
                                 </div>
                                 <div class="gamejam-meta">
                                     <div class="meta-container year-container">
@@ -215,7 +227,7 @@ projets:
 
                     <div class="experience-item" data-type="resume" data-portfolio="CDPR" style="cursor: default;">
                         <div class="experience-image">
-                            <img src="img/resume/CDPR/CD-Projekt-RED-Logo.png" alt="CDPR" />
+                            <img src="img/resume/CDPR/CD-Projekt-RED-Logo.png" alt="CDPR">
                         </div>
                         <div class="experience-description">
                             <h4>Lead & Senior Technical Artist / CD PROJEKT RED</h4>
@@ -226,31 +238,32 @@ projets:
 
                     <div class="experience-item" data-type="resume" data-portfolio="IOI" style="cursor: default;">
                         <div class="experience-image">
-                            <img src="img/resume/IOI/IOI.png" alt="IOI" />
+                            <img src="img/resume/IOI/IOI.png" alt="IOI">
                         </div>
                         <div class="experience-description">
                             <h4>Lead & Senior Technical Artist / IO Interactive</h4>
                             <p class="experience-date"><i class="fa fa-calendar time-icon"></i>Jan 2025 - Sep 2025</p>
                             <p>Leading the Technical Art and VFX Team at <a href="https://ioi.dk/project-fantasy" target="_blank">Project Fantasy</a>.
-                        </p></div>
+                        </div>
                     </div>
 
                     <div class="experience-item" data-type="resume" data-portfolio="BBI" style="cursor: default;">
                         <div class="experience-image">
-                            <img src="img/resume/BBI/BBI.png" alt="BBI" />
+                            <img src="img/resume/BBI/BBI.png" alt="BBI">
                         </div>
                         <div class="experience-description">
                             <h4>Technical Artist / Blackbird Interactive</h4>
                             <p class="experience-date"><i class="fa fa-calendar time-icon"></i>Mar 2021 - Oct 2024</p>
                             <p>Technical Artist - <a href="https://blackbirdinteractive.com/projects/" target="_blank">Homeworld 3</a>
-                            </p><p>Developed and implemented several core features and systems while coordinating with different departments.</p>
+                            <p>Developed and implemented several core features and systems while coordinating with different departments.</p>
                             <p>Responsibilities included: content creation pipelines, shader development, post processing, real-time optimization and profiling, procedural content generation, destruction systems, VFX support, custom volumetric rendering and custom tool development.</p>
                         </div>
                     </div>
 
-                    <div class="portfolio-element experience-item" data-type="resume" style="cursor: default;" data-target="#portfolioModal">
+                    <div class="portfolio-element experience-item" data-type="resume" style="cursor: default;"
+                        data-target="#portfolioModal">
                         <div class="experience-image">
-                            <img src="img/resume/langara.png" alt="Langara CEA" />
+                            <img src="img/resume/langara.png" alt="Langara CEA">
                         </div>
                         <div class="experience-description">
                             <h4>Technical Art Instructor - Unreal Shaders / Langara Centre for Entertainment Arts</h4>
@@ -261,7 +274,7 @@ projets:
 
                     <div class="portfolio-element experience-item" data-type="resume" style="cursor: default;">
                         <div class="experience-image">
-                            <img src="img/resume/Fyde/logo.png" alt="Fyde" />
+                            <img src="img/resume/Fyde/logo.png" alt="Fyde">
                         </div>
                         <div class="experience-description">
                             <h4>Software Development Internship / Fyde, Inc</h4>
@@ -270,9 +283,9 @@ projets:
                         </div>
                     </div>
 
-                    <div class="portfolio-element experience-item" data-type="resume" data-portfolio="PG" data-toggle="modal" data-target="#portfolioModal">
+                    <div class="portfolio-element experience-item"  data-type="resume" data-portfolio="PG" data-toggle="modal" data-target="#portfolioModal">
                         <div class="experience-image">
-                            <img src="img/resume/PG/logo.png" alt="Porto Graphics" />
+                            <img src="img/resume/PG/logo.png" alt="Porto Graphics">
                         </div>
                         <div class="experience-description">
                             <h4>Co-Founder and Team Leader / Porto Graphics</h4>
@@ -294,9 +307,9 @@ projets:
                         </div>
                     </div> -->
 
-                    <div class="experience-item" data-type="resume" data-portfolio="UJr" style="cursor: default;">
+                    <div class="experience-item"  data-type="resume" data-portfolio="UJr" style="cursor: default;">
                         <div class="experience-image">
-                            <img src="img/resume/uporto.png" alt="UPorto" />
+                            <img src="img/resume/uporto.png" alt="UPorto">
                         </div>
                         <div class="experience-description">
                             <h4>3D Modeling Instructor / University of Porto</h4>
@@ -305,9 +318,9 @@ projets:
                         </div>
                     </div>
 
-                    <div class="portfolio-element experience-item" data-type="resume" style="cursor: default;">
+                    <div class="portfolio-element experience-item"  data-type="resume" style="cursor: default;">
                         <div class="experience-image">
-                            <img src="img/resume/FunPunch/logo1.png" alt="Fun Punch Games" />
+                            <img src="img/resume/FunPunch/logo1.png" alt="Fun Punch Games">
                         </div>
                         <div class="experience-description">
                             <h4>UI/UX Designer and 2D Artist / Fun Punch Games</h4>
@@ -324,7 +337,7 @@ projets:
 
                     <div class="experience-item" style="cursor: default;">
                         <div class="experience-image">
-                            <img src="img/resume/teesside.png" alt="Teesside" />
+                            <img src="img/resume/teesside.png" alt="Teesside">
                         </div>
                         <div class="experience-description">
                             <h4>Teesside University <span>England, UK</span></h4>
@@ -338,7 +351,7 @@ projets:
 
                     <div class="experience-item" style="cursor: default;">
                         <div class="experience-image">
-                            <img src="img/resume/uporto.png" alt="UPorto" />
+                            <img src="img/resume/uporto.png" alt="UPorto">
                         </div>
                         <div class="experience-description">
                             <h4>University of Porto <span>Portugal</span></h4>
@@ -350,7 +363,7 @@ projets:
 
                     <div class="experience-item" style="cursor: default;">
                         <div class="experience-image">
-                            <img src="img/resume/ipvc4.png" alt="IPVC" />
+                            <img src="img/resume/ipvc4.png" alt="IPVC">
                         </div>
                         <div class="experience-description">
                             <h4>Polytechnic Institute of Viana do Castelo <span>Portugal</span></h4>
@@ -380,7 +393,8 @@ projets:
                     <div class="container contact-info">
 
                         <div class="row">
-                            <div class="col-lg-3 text-center" style="margin-bottom: 30px; padding-left: 0px;"><img style="max-width: 100%; max-height: 100%;" src="img/profile.png" /></div>
+                            <div class="col-lg-3 text-center" style="margin-bottom: 30px; padding-left: 0px;"><img
+                                    style="max-width: 100%; max-height: 100%;" src="img/profile.png"></div>
                             <div class="col-lg-9">
                             <p style="font-size: 18px;">Hey there! I’m Francisco and I’m a <b>Technical Artist</b> and <b>Unreal Engine Specialist</b> with a passion for creative
                                 technologies.</p>
@@ -392,7 +406,8 @@ projets:
                             <p style="font-size: 18px;">Currently freelancing, I’m always excited to chat about new opportunities. Feel free to
                                 reach out!</p>
                                 <p style="padding-top: 3px;"> </p>
-                                <a href="assets/Francisco Múrias - CV.pdf" target="_blank" class="btn btn-lg btn-outline">
+                                <a href="assets/Francisco Múrias - CV.pdf" target="_blank"
+                                    class="btn btn-lg btn-outline">
                                     <i class="fa fa-download"></i> Download Resume
                                 </a>
                                 <a href="#contact" class="btn btn-lg btn-outline scrollto">
@@ -401,7 +416,7 @@ projets:
                             </div>
                         </div>
 
-                        <br /><br />
+                        <br><br>
 
                         <div class="row">
 
@@ -411,81 +426,81 @@ projets:
                                         <h6><b>Software</b></h6>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/unreal.png" /></div>
+                                        <div class="tool-image"><img src="img/software/unreal.png"></div>
                                         <div class="tool-title">Unreal Engine</div>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/blender.png" /></div>
+                                        <div class="tool-image"><img src="img/software/blender.png"></div>
                                         <div class="tool-title">Blender</div>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/Houdini.png" /></div>
+                                        <div class="tool-image"><img src="img/software/Houdini.png"></div>
                                         <div class="tool-title">Houdini</div>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/unity.png" /></div>
+                                        <div class="tool-image"><img src="img/software/unity.png"></div>
                                         <div class="tool-title">Unity</div>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/substance.svg" /></div>
+                                        <div class="tool-image"><img src="img/software/substance.svg"></div>
                                         <div class="tool-title">Substance 3D</div>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/quixel.png" /></div>
+                                        <div class="tool-image"><img src="img/software/quixel.png"></div>
                                         <div class="tool-title">Quixel Suite</div>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/3dsmax.png" /></div>
+                                        <div class="tool-image"><img src="img/software/3dsmax.png"></div>
                                         <div class="tool-title">3Ds Max</div>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/photoshop.svg" /></div>
+                                        <div class="tool-image"><img src="img/software/photoshop.svg"></div>
                                         <div class="tool-title">Photoshop</div>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/after-effects.svg" /></div>
+                                        <div class="tool-image"><img src="img/software/after-effects.svg"></div>
                                         <div class="tool-title">After Effects</div>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/zBrush.png" /></div>
+                                        <div class="tool-image"><img src="img/software/zBrush.png"></div>
                                         <div class="tool-title">ZBrush</div>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/marmorset.png" /></div>
+                                        <div class="tool-image"><img src="img/software/marmorset.png"></div>
                                         <div class="tool-title">Marmorset Toolbag</div>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/gaea.png" /></div>
+                                        <div class="tool-image"><img src="img/software/gaea.png"></div>
                                         <div class="tool-title">Gaea</div>
                                     </div>
                                 </div>
-                                <br /><br />
+                                <br><br>
                                 <div class="tools">
                                     <div class="tool-header">
                                         <h6><b>Languages and Frameworks</b></h6>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/python.png" /></div>
+                                        <div class="tool-image"><img src="img/software/python.png"></div>
                                         <div class="tool-title">Python</div>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/js.png" /></div>
+                                        <div class="tool-image"><img src="img/software/js.png"></div>
                                         <div class="tool-title">Javascript</div>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/c.png" /></div>
+                                        <div class="tool-image"><img src="img/software/c.png"></div>
                                         <div class="tool-title">C/C++</div>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/tf.png" /></div>
+                                        <div class="tool-image"><img src="img/software/tf.png"></div>
                                         <div class="tool-title">Tensorflow</div>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/react.png" /></div>
+                                        <div class="tool-image"><img src="img/software/react.png"></div>
                                         <div class="tool-title">ReactNative</div>
                                     </div>
                                     <div class="tool-item">
-                                        <div class="tool-image"><img src="img/software/hlsl.png" /></div>
+                                        <div class="tool-image"><img src="img/software/hlsl.png"></div>
                                         <div class="tool-title">HLSL/GLSL</div>
                                     </div>
                                 </div>
@@ -580,7 +595,7 @@ projets:
                     <div style="text-align:center;font-size:20px;">
                         Leave me a message at <a href="mailto:francis.mmcp@gmail.com"> francis.mmcp@gmail.com</a>
                     </div>
-                    <br /><br />
+                    <br><br>
                     <div class="row contact-info">
                         <div class="social-links col-xl-12">
                             <a href="https://www.linkedin.com/in/francisco-múrias-890bba149/" target="_blank"><i class="fab fa-linkedin"></i></a>
