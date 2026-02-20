@@ -3,9 +3,13 @@ projets:
   - title: "Nebulas and Volumetrics"
     subtitle: "Homeworld 3"
     image: "img/portfolio/HW3/hw3nebulas.png"
+    modalName: "Nebulas"
+    folder: "HW3"
   - title: "Destruction Systems"
     subtitle: "Homeworld 3"
     image: "img/portfolio/HW3/hw3destruction.png"
+    modalName: "Destruction"
+    folder: "HW3"
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -103,16 +107,27 @@ projets:
                     </button><button type="button" class="btn portfolio-filter" data-filter=".portfolio-professional">Professional
                 </button></div>
                     <div class="grid" style="margin-bottom: 36px;" data-cms-bind="projets">
-                        <div class="grid-item portfolio-item portfolio-professional portfolio-featured">
-                            <a class="portfolio-element btn-block" data-type="portfolio" data-portfolio="Nebulas" data-subfolder="HW3" data-toggle="modal" data-target="#portfolioModal">
-                              <img data-prop-src="image" data-prop-alt="title" src="img/portfolio/placeholder.png" class="img-fluid portfolio-thumb" />
-                                <div class="details">
-                                    <h3 data-prop="title">Nom du projet</h3>
-                                    <p data-prop="subtitle">Sous-titre</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+    
+    <div class="grid-item portfolio-item portfolio-professional portfolio-featured">
+        <a class="portfolio-element btn-block" 
+           data-type="portfolio" 
+           data-prop-data-portfolio="modal_id"
+           data-toggle="modal" 
+           data-target="#portfolioModal">
+            
+            <img data-prop-src="image" 
+                 data-prop-alt="title" 
+                 src="img/portfolio/placeholder.png" 
+                 class="img-fluid portfolio-thumb" />
+            
+            <div class="details">
+                <h3 data-prop="title">Nom du projet</h3>
+                <p data-prop="subtitle">Sous-titre</p>
+            </div>
+        </a>
+    </div>
+
+</div>
                 </div>
                 <div class=" text-center" style="margin-bottom: 70px;">
                     <button type="button" class="btn portfolio-filter more-button" data-filter=".portfolio-featured, .portfolio-personal, .portfolio-professional, .portfolio-tools">
