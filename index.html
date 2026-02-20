@@ -103,25 +103,25 @@ projets:
                     <button type="button" class="btn portfolio-filter" data-filter=".portfolio-professional">Professional</a>
                 </div>
                     <div class="grid" style="margin-bottom: 36px;">
-    <div class="grid-item portfolio-item portfolio-professional portfolio-featured">
-        <a class="portfolio-element btn-block" 
-           data-type="portfolio" 
-           data-prop-data-portfolio="portfolio_id" 
-           data-prop-data-subfolder="subfolder"
-           data-toggle="modal" 
-           data-target="#portfolioModal">
-           
-            <img data-prop-src="image" 
-                 data-prop-alt="title" 
-                 src="img/portfolio/placeholder.png" 
-                 class="img-fluid portfolio-thumb">
-                 
-            <div class="details">
-                <h3 data-prop="title">Titre du projet</h3>
-                <p data-prop="subtitle">Sous-titre</p>
-            </div>
-        </a>
-    </div>
+  
+  {% for projet in page.projets %}
+  <div class="grid-item portfolio-item {{ projet.categorie }}">
+    <a class="portfolio-element btn-block" 
+       data-toggle="modal" 
+       data-target="#portfolioModal">
+
+      <img src="{{ projet.image }}" 
+           alt="{{ projet.titre }}" 
+           class="img-fluid portfolio-thumb">
+
+      <div class="details">
+        <h3>{{ projet.titre }}</h3>
+        <p>{{ projet.sous_titre }}</p>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+
 </div>
                 </div>
                 <div class=" text-center" style="margin-bottom: 70px;">
